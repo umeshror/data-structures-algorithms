@@ -57,9 +57,9 @@ def main(s):
 
     for i in reversed(s):
         if roman_map[i] >= prev:
-            res = res + roman_map[i]
+            res += roman_map[i]
         else:
-            res = res - roman_map[i]
+            res -= roman_map[i]
         prev = roman_map[i]
     return res
 
