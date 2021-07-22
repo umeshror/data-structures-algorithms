@@ -34,8 +34,8 @@ def length_of_longest_substring(strng):
 
         if char in stng_list:
             longest = max(longest, len(stng_list))
-            index = mylist.index(char)
-            mylist = mylist[index + 1:]  # remove all items before the repeated item including itself
+            index = stng_list.index(char)
+            stng_list = stng_list[index + 1:]  # remove all items before the repeated item including itself
 
         stng_list.append(char)
 
