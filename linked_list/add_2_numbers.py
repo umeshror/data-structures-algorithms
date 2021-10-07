@@ -25,6 +25,7 @@ def generate_nodes(arr):
 list_1 = generate_nodes([2, 4, 3])
 list_2 = generate_nodes([5, 6, 4])
 
+
 def merge_two_lists(l1, l2, carry=0, node=Node(0)):
     """
     :type l1: Head Node 1 : 2, 4, 3
@@ -42,3 +43,5 @@ def merge_two_lists(l1, l2, carry=0, node=Node(0)):
 
 merge_two_lists(list_1, list_2)
 merge_two_lists(generate_nodes([0]), generate_nodes([0]))
+merge_two_lists(generate_nodes([0, 1]), generate_nodes([2]))
+
